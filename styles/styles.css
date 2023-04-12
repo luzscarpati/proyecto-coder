@@ -9,7 +9,7 @@ body {
     color: white;
     background-color: black;
     letter-spacing: normal;
-
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -35,17 +35,9 @@ header {
     display: flex;
     flex-direction: row;
     margin: 1em;
-   /* margin: 0.5em;
-    display: grid;
-    grid-template-columns: 25vw 1fr 1fr;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-    width: 1200px;*/
 }
 .lengua {
     width: 20vw;
-    ma
 }
 .lengua:hover {
     width: 22vw;
@@ -219,6 +211,18 @@ footer {
     align-self: flex-start;
     padding-left: 0.5em;
 }
+/*----------------------------------CARUSEL - SECTION INTEGRANTES-----------------------------------*/
+.img__carusel {
+    height: 450px;
+}
+.parrafo__carusel {
+    font-size: 0.7rem;
+    align-self: center;
+    text-align: justify;
+}
+.titulo_carusel {
+    text-align: left;
+}
 /*-------------------------------------------QUERIS-------------------------------------------------*/
 
 @media (min-width: 600px) {
@@ -290,7 +294,7 @@ font-weight: 700;
 .textarea__formulario {
   font-size: 1.5rem;
 }
-/*----------------------------------- QUERIS - TABLETS FOOTER--------------------------------------*/
+/*------------- QUERIS - TABLETS FOOTER--------------*/
 .img-redes {
     margin-top: 1em;
     width: 50px;
@@ -298,6 +302,18 @@ font-weight: 700;
 .contacto_footer {
     font-size: 2rem;
     margin-right: 0.5em;
+}
+/*------------CARUSEL - SECTION INTEGRANTES--------------------*/
+.img__carusel {
+    height: 650px;
+}
+.parrafo__carusel {
+    font-size: 1rem;
+    align-self: center;
+    text-align: justify;
+}
+.titulo_carusel {
+    text-align: left;
 }
 
 }
@@ -417,5 +433,18 @@ p {
 .contacto_footer {
     font-size: 5rem;
     margin-right: 1em;
+}
+
+/*----------------------------------CARUSEL - SECTION INTEGRANTES-----------------------------------*/
+.img__carusel {
+    height: 650px;
+}
+.parrafo__carusel {
+    font-size: 1.3rem;
+    align-self: center;
+    text-align: justify;
+}
+.titulo_carusel {
+    text-align: left;
 }
 }
