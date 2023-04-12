@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor__lengua">
+            <a href="../index.html"><img class="lengua" src="../img/logo_lengua.png"
+                    alt="Lengua de The Rolling Stones"></a>
+        </div>
+        <h1>THE ROLLING <span class="h1__stones">STONES</span></h1>
+        <nav>
+            <ul class="nav__header">
+                <li><a href="../pages/historia.html">Historia</a></li>
+                <li><a href="../pages/integrantes.html">Integrantes</a></li>
+                <li><a href="../pages/discografia.html">Discografìa</a></li>
+                <li><a href="../pages/audiovisual.html">Audiovisual</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+     <main>
+        <div class="encabezado-seccion">
+            <h2 class="titulo-page">CONTACTO</h2>
+        </div>
+            <section>
+                <h2>Dejanos un mensaje</h2>
+                <form class="formulario__contacto" action="">
+                    <div>
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input class="input_formulario" type="text" id="nombre" name="nombre">
+                    </div>
+                    <div>
+                        <label for="mail">Correo electrónico</label>
+                        <input class="input_formulario" type="email" id="mail" name="mail">
+                    </div>
+                    <div>
+                        <label for="asunto">Asunto del Mensaje</label>
+                        <select class="input_formulario" name="asunto" id="asunto">
+                            <option value="mensaje">Mensaje</option>
+                            <option value="reclamo">Reclamo</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="cotizacion">Cotización</option>
+                        </select>
+                    </div>
+                    <div class="mensaje__formulario">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="textarea__formulario" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <span>Género</span>
+                        <div>
+                            <label for="hombre">Hombre</label>
+                            <input type="radio" name="genero" id="hombre" value="hombre">
+                        </div>
+                        <div>
+                            <label for="mujer">Mujer</label>
+                            <input type="radio" name="genero" id="mujer" value="mujer">
+                        </div>
+                    </div>
+                    <div class="submit_formulario">
+                        <label for="info">Quiere recibir información</label>
+                        <input type="checkbox" name="info" id="info" value="acepto">
+
+                        <input class="input_formulario" type="submit" id="enviar" value="Enviar">
+                        <input class="input_formulario" type="reset" id="Resetear" value="Resetear">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <div class="contacto_footer"><a href="../pages/contacto.html">Contacto</a></div>
+            <ul class="redes__footer">
+                <li><a href="https://www.instagram.com/therollingstones/?hl=es" target="_blank"><img class="img-redes"
+                            src="../img/png/001-instagram.png" alt="instagram"></a></li>
+                <li><a href="https://open.spotify.com/artist/22bE4uQ6baNwSHPVcDxLCe" target="_blank"><img class="img-redes"
+                            src="../img/png/001-spotify.png" alt="spotify"></a></li>
+                <li><a href="https://www.facebook.com/therollingstones" target="_blank"><img class="img-redes"
+                            src="../img/png/003-facebook.png" alt="facebook"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCB_Z6rBg3WW3NL4-QimhC2A" target="_blank"><img
+                            class="img-redes" src="../img/png/005-youtube.png" alt="youtube"></a></li>
+                <li><a href="https://twitter.com/RollingStones" target="_blank"><img class="img-redes"
+                            src="../img/png/002-gorjeo.png" alt="twitter"></a></li>
+                <li><a href="https://www.tiktok.com/@therollingstones" target="_blank"><img class="img-redes"
+                            src="../img/png/004-tik-tok.png" alt="Tik Tok"></a></li>
+        </footer>
+</body>
+
+</html>
