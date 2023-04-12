@@ -73,7 +73,7 @@ p {
     flex-direction: column;
     align-items: center;
 }
-.noticias__descadas {
+.noticias__destacadas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -236,13 +236,6 @@ justify-content: center;
 align-items: center;
 align-content: center;
 
-        /*margin: 0.5em;
-        display: grid;
-        grid-template-columns: 33vw 1fr 1fr;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        height: 10vh;*/
     }
     .lengua {
         width: 25vw;
@@ -316,15 +309,7 @@ font-weight: 700;
     align-items: center;
     align-content: center;
     width: 100vw;
-        }
-    /*header {
-        margin:1em;
-        display: grid;
-        grid-template-columns: 19vw 1fr 1fr;
-        align-content: center;
-        justify-content: center;
-        align-items: center;*/
-    
+        }    
     .lengua {
         width: 15vw;
     }
