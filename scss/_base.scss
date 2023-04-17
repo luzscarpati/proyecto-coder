@@ -1,0 +1,36 @@
+$background-color: black;
+$font-family: "Amatic SC";
+$font-color: white;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+    letter-spacing: normal;
+    overflow-x: hidden;
+    color: $font-color;
+    
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $font-color;
+        &:hover {
+            color: red;
+        } 
+    }
+    h2 {
+        align-self: flex-start;
+        padding-left: 0.3em;
+    }
+    p {
+    margin: 0.5em;
+    }
+    }

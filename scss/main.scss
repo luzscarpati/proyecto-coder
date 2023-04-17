@@ -1,147 +1,16 @@
-$background-color: black;
-$font-family: "Amatic SC";
-$font-color: white;
+@import "./base";
+@import "./componets/header";
+@import "./componets/footer";
+@import "./pages/index";
+@import "./pages/discografia";
+@import "./pages/contacto";
+@import "./pages/audiovisual";
+@import "./pages/historia.scss";
+@import "./componets/carrusel";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: $font-family;
-    background-color: $background-color;
-    letter-spacing: normal;
-    overflow-x: hidden;
-    color: $font-color;
     
-    ul {
-        list-style: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: $font-color;
-        &:hover {
-            color: red;
-        } 
-    }
-    p {
-    margin: 0.5em;
-    }
-
-
-    header {
-    display: flex;
-    flex-direction: row;
-    margin: 1em;
-
-        .lengua {
-        width: 20vw;
-        &:hover {
-        width: 22vw;}
-        }
-
-        .nav__header {
-        display: flex;
-        flex-direction: column;
-        padding-left: 1em;
-        font-size: 1.3rem;
-        }
-    
-        h1 {
-        font-size: 2.5rem;
-        text-align: center;
-        line-height: 120%;
-        }
-        .h1__stones {
-        font-size: 4.4rem;
-        }
-    }
-
-    .main__index {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-        h2 {
-            align-self: flex-start;
-            padding-left: 0.3em;
-        }
-    
-        .noticias__destacadas {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            background-color: white;
-            color: black;
-            width: 90vw;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            margin-left: 0.5em;
-            margin-bottom: 0.5em;
-            margin-right: 0.5em;
-
-            h3 {
-                margin-top: 0.2em;
-                margin-left: 0.2em;
-                font-weight: bold;
-            }
-
-            .img__destacada {
-            width: 100%;
-            height: 50%;
-            overflow: hidden;
-            }
-            }
-        .secccion__notis-secundarias {
-        margin-top: 0.5em;
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: center;
-        gap: 23px;
-        flex-wrap: wrap;
-
-            .noticia__secundaria {
-            width: 250px;
-            height: 350px;
-            overflow: hidden;
-            font-weight: 700;
-
-                .img__secundaria {
-                width: 100%;
-                height: 50%;
-                }
-                h4 {
-                margin: 0.2em 0.2em 0.2em 0.2em;
-                }
-            }
-        }
-    }
-
-    footer {
-    display: flex;
-    margin-top: 0.5em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    margin-bottom: 0.5em;
-    gap: 1em;
-    justify-content: center;
-    align-items: center;
-
-    .redes__footer {
-        display: flex;
-        gap: 1em;
-    }
-    
-    .img-redes {
-        width: 30px;
-    }
-    }
-    
-}    
+ 
     
    
 

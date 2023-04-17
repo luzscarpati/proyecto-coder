@@ -1,0 +1,15 @@
+.formulario__contacto {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+
+    .mensaje__formulario {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5em;
+    }
+}

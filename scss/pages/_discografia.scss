@@ -1,0 +1,14 @@
+.discografia {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .img_discos {
+        width: 200px;
+        height: 200px;
+    }
+}
+

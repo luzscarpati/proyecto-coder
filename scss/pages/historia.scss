@@ -1,0 +1,25 @@
+.historia {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+
+    .subtitulos_historia {
+    margin-top: .3em;
+    align-self: flex-start;
+    padding-left: 0.5em;
+    }
+
+    .article_historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+        .img_historia {
+        width: 85%;
+        }
+    }
+}
