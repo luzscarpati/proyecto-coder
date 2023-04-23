@@ -1,10 +1,7 @@
 .discografia {
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
+    @include flex_row;
     gap: 30px;
     flex-wrap: wrap;
-    justify-content: center;
 
     .img_discos {
         width: 200px;

@@ -7,7 +7,24 @@ $font-color: white;
     padding: 0;
     box-sizing: border-box;
 }
-
+@mixin flex_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex_colunm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex_column_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 body {
     font-family: $font-family;
     background-color: $background-color;

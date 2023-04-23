@@ -32,6 +32,8 @@ body p {
 header {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin: 1em;
 }
 header .lengua {
@@ -43,7 +45,9 @@ header .lengua:hover {
 header .nav__header {
   display: flex;
   flex-direction: column;
-  padding-left: 1em;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 0.1em;
   font-size: 1.3rem;
 }
 header h1 {
@@ -57,13 +61,14 @@ header .h1__stones {
 
 footer {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-top: 0.5em;
   margin-left: 0.5em;
   margin-right: 0.5em;
   margin-bottom: 0.5em;
   gap: 1em;
-  justify-content: center;
-  align-items: center;
 }
 footer .redes__footer {
   display: flex;
@@ -76,18 +81,18 @@ footer .img-redes {
 .main__index {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .main__index .noticias__destacadas {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   background-color: white;
   color: black;
   width: 90vw;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   margin-left: 0.5em;
   margin-bottom: 0.5em;
   margin-right: 0.5em;
@@ -103,11 +108,11 @@ footer .img-redes {
   overflow: hidden;
 }
 .main__index .secccion__notis-secundarias {
-  margin-top: 0.5em;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
   justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
   gap: 23px;
   flex-wrap: wrap;
 }
@@ -128,10 +133,10 @@ footer .img-redes {
 .discografia {
   display: flex;
   flex-direction: row;
-  align-content: space-around;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .discografia .img_discos {
   width: 200px;
@@ -139,17 +144,18 @@ footer .img-redes {
 }
 
 .formulario__contacto {
-  margin: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin: 1em;
   gap: 1em;
 }
 .formulario__contacto .mensaje__formulario {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 0.5em;
 }
 
@@ -168,18 +174,18 @@ footer .img-redes {
 .audiovisual__secundario {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   align-content: space-around;
   gap: 1em;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .historia {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  align-items: flex-start;
 }
 .historia .subtitulos_historia {
   margin-top: 0.3em;
@@ -191,7 +197,6 @@ footer .img-redes {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
 }
 .historia .article_historia .img_historia {
   width: 85%;

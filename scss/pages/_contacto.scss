@@ -1,15 +1,10 @@
 .formulario__contacto {
+    @include flex_column_left;
     margin: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 1em;
 
     .mensaje__formulario {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex_row;
         gap: 0.5em;
     }
 }

@@ -1,18 +1,12 @@
 .main__index {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex_colunm;
 
     .noticias__destacadas {
-        display: flex;
-        flex-direction: row;
+       @include flex_row;
         flex-wrap: wrap;
         background-color: white;
         color: black;
         width: 90vw;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
         margin-left: 0.5em;
         margin-bottom: 0.5em;
         margin-right: 0.5em;
@@ -30,11 +24,8 @@
         }
         }
     .secccion__notis-secundarias {
+    @include flex_row;
     margin-top: 0.5em;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: center;
     gap: 23px;
     flex-wrap: wrap;
 

@@ -1,9 +1,5 @@
 .historia {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-content: center;
+@include flex_column_left;
 
     .subtitulos_historia {
     margin-top: .3em;
@@ -12,12 +8,8 @@ align-content: center;
     }
 
     .article_historia {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    
+    @include flex_colunm;
+   
         .img_historia {
         width: 85%;
         }

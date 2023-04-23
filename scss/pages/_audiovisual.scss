@@ -1,8 +1,5 @@
 .encabezado__audiovisual {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex_colunm;
     gap: 0.5em;
 
     .video_encabezado {
@@ -11,10 +8,8 @@
     }
 }
 .audiovisual__secundario {
-    display: flex;
-    flex-direction: row;
+    @include flex_row;
     align-content: space-around;
     gap: 1em;
     flex-wrap: wrap;
-    justify-content: center;
 }

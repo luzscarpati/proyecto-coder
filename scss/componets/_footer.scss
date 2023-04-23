@@ -1,12 +1,10 @@
 footer {
-    display: flex;
+    @include flex_row;
     margin-top: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
     margin-bottom: 0.5em;
     gap: 1em;
-    justify-content: center;
-    align-items: center;
 
     .redes__footer {
         display: flex;
