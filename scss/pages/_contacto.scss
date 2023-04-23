@@ -1,10 +1,18 @@
 .formulario__contacto {
-    @include flex_column_left;
+    @include flex_column_variable(flex-start);
     margin: 1em;
     gap: 1em;
 
-    .mensaje__formulario {
+      .mensaje__formulario {
         @include flex_row;
         gap: 0.5em;
+        }
+    @include tablet() {
+        font-size: 2rem;
+        .input_formulario {
+            width: 20em;
+            height: 2em;
+            font-size: 1rem;
+        }
     }
 }

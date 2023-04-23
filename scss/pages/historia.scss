@@ -1,5 +1,5 @@
 .historia {
-@include flex_column_left;
+    @include flex_column_variable(flex-start);
 
     .subtitulos_historia {
     margin-top: .3em;
@@ -8,7 +8,7 @@
     }
 
     .article_historia {
-    @include flex_colunm;
+        @include flex_column_variable(center);
    
         .img_historia {
         width: 85%;

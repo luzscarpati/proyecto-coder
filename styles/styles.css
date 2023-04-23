@@ -42,6 +42,22 @@ header .lengua {
 header .lengua:hover {
   width: 22vw;
 }
+@media (min-width: 576px) {
+  header .lengua {
+    width: 25vw;
+  }
+  header .lengua:hover {
+    width: 27vw;
+  }
+}
+@media (min-width: 1080px) {
+  header .lengua {
+    width: 15vw;
+  }
+  header .lengua:hover {
+    width: 17vw;
+  }
+}
 header .nav__header {
   display: flex;
   flex-direction: column;
@@ -50,13 +66,41 @@ header .nav__header {
   padding-left: 0.1em;
   font-size: 1.3rem;
 }
+@media (min-width: 576px) {
+  header .nav__header {
+    padding-left: 0.5em;
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 1080px) {
+  header .nav__header {
+    font-size: 3rem;
+  }
+  header .nav__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+  }
+}
 header h1 {
   font-size: 2.5rem;
   text-align: center;
   line-height: 120%;
 }
+@media (min-width: 576px) {
+  header h1 {
+    font-size: 3.8rem;
+  }
+}
 header .h1__stones {
   font-size: 4.4rem;
+}
+@media (min-width: 576px) {
+  header .h1__stones {
+    font-size: 6.7rem;
+  }
 }
 
 footer {
@@ -72,10 +116,25 @@ footer {
 }
 footer .redes__footer {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 1em;
 }
 footer .img-redes {
   width: 30px;
+}
+@media (min-width: 576px) {
+  footer .img-redes {
+    margin-top: 1em;
+    width: 50px;
+  }
+}
+@media (min-width: 576px) {
+  footer .contacto_footer {
+    font-size: 2rem;
+    margin-right: 0.5em;
+  }
 }
 
 .main__index {
@@ -92,17 +151,42 @@ footer .img-redes {
   flex-wrap: wrap;
   background-color: white;
   color: black;
-  width: 90vw;
-  margin-left: 0.5em;
-  margin-bottom: 0.5em;
-  margin-right: 0.5em;
+  width: 85vw;
+  gap: 20px;
+  margin-top: 1.2em;
 }
-.main__index .noticias__destacadas h3 {
+.main__index .noticias__destacadas .tarjeta__notis {
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+  font-weight: 700;
+}
+@media (min-width: 576px) {
+  .main__index .noticias__destacadas .tarjeta__notis {
+    width: 210px;
+    height: 350px;
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 576px) and (min-width: 1080px) {
+  .main__index .noticias__destacadas .tarjeta__notis {
+    width: 400px;
+    height: 480px;
+    font-size: 1.5rem;
+  }
+}
+.main__index .noticias__destacadas .tarjeta__notis h3 {
   margin-top: 0.2em;
   margin-left: 0.2em;
   font-weight: bold;
+  font-size: 1.2rem;
 }
-.main__index .noticias__destacadas .img__destacada {
+@media (min-width: 1080px) {
+  .main__index .noticias__destacadas .tarjeta__notis h3 {
+    font-size: 2rem;
+  }
+}
+.main__index .noticias__destacadas .tarjeta__notis .img__destacada {
   width: 100%;
   height: 50%;
   overflow: hidden;
@@ -113,7 +197,8 @@ footer .img-redes {
   justify-content: center;
   align-items: center;
   margin-top: 0.5em;
-  gap: 23px;
+  margin-bottom: 0.5em;
+  gap: 19px;
   flex-wrap: wrap;
 }
 .main__index .secccion__notis-secundarias .noticia__secundaria {
@@ -128,6 +213,24 @@ footer .img-redes {
 }
 .main__index .secccion__notis-secundarias .noticia__secundaria h4 {
   margin: 0.2em 0.2em 0.2em 0.2em;
+}
+@media (min-width: 576px) {
+  .main__index .secccion__notis-secundarias .noticia__secundaria {
+    width: 170px;
+    height: 280px;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1080px) {
+  .main__index .secccion__notis-secundarias .noticia__secundaria {
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
 }
 
 .discografia {
@@ -157,6 +260,16 @@ footer .img-redes {
   justify-content: center;
   align-items: center;
   gap: 0.5em;
+}
+@media (min-width: 576px) {
+  .formulario__contacto {
+    font-size: 2rem;
+  }
+  .formulario__contacto .input_formulario {
+    width: 20em;
+    height: 2em;
+    font-size: 1rem;
+  }
 }
 
 .encabezado__audiovisual {
@@ -205,11 +318,21 @@ footer .img-redes {
 .img__carusel {
   height: 450px;
 }
+@media (min-width: 576px) {
+  .img__carusel {
+    height: 600px;
+  }
+}
 
 .parrafo__carusel {
   font-size: 0.7rem;
   align-self: center;
   text-align: justify;
+}
+@media (min-width: 576px) {
+  .parrafo__carusel {
+    font-size: 1rem;
+  }
 }
 
 .titulo_carusel {

@@ -13,18 +13,26 @@ $font-color: white;
     justify-content: center;
     align-items: center;
 }
-@mixin flex_colunm {
+
+@mixin flex_column_variable($aling){
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: $aling;
 }
-@mixin flex_column_left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+
+@mixin tablet {
+    @media (min-width: 576px) {
+        @content;
 }
+}
+@mixin desktop {
+    @media (min-width: 1080px) {
+        @content;
+    }
+}
+
+
 body {
     font-family: $font-family;
     background-color: $background-color;

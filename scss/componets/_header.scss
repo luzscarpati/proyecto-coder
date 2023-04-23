@@ -6,20 +6,53 @@ header {
         width: 20vw;
         &:hover {
         width: 22vw;}
+        @include tablet(){
+        & {
+            width: 25vw;
+            &:hover {
+            width: 27vw;
+            }
+        }
+        }
+        @include desktop() {
+        & {
+            width: 15vw;
+            &:hover {
+            width: 17vw;
+            }
+        }
+        }
         }
 
         .nav__header {
-        @include flex_column_left;
+        @include flex_column_variable(flex-start);
         padding-left: .1em;
         font-size: 1.3rem;
+        @include tablet() {
+            padding-left: 0.5em;
+            font-size: 2.3rem;    
+        }
+        @include desktop(){
+        & {
+        @include flex_row;
+        gap: 22px;
+        }
+        font-size: 3rem;
+        }
         }
     
         h1 {
         font-size: 2.5rem;
         text-align: center;
         line-height: 120%;
+        @include tablet(){
+            font-size: 3.8rem;
+        }
         }
         .h1__stones {
         font-size: 4.4rem;
+        @include tablet(){
+            font-size: 6.7rem;  
+        }
         }
     }
