@@ -9,12 +9,24 @@
         width: 85vw;
         gap: 20px;
         margin-top: 1.2em;
+        box-shadow: $box-shadow;
 
         .tarjeta__notis {
             width: 250px;
             height: 350px;
             overflow: hidden;
             font-weight: 700;
+        
+            h3 {
+                margin-top: 0.2em;
+                margin-left: 0.2em;
+                font-weight: bold;
+                font-size: 1rem;
+                @include desktop {
+                  font-size: 2rem;
+                }
+                }
+
             @include tablet(){
                 width: 210px;
                 height: 350px;
@@ -25,21 +37,19 @@
                 font-size: 1.5rem;
             }
             }
-              h3 {
-              margin-top: 0.2em;
-              margin-left: 0.2em;
-              font-weight: bold;
-              font-size: 1.2rem;
-              @include desktop {
-                font-size: 2rem;
-              }
-              }
-
              .img__destacada {
               width: 100%;
-            height: 50%;
+            height: 40%;
               overflow: hidden;
-
+            }
+            p {
+                font-size: 1rem;
+                @include tablet(){
+                  font-size: .9rem;  
+                }
+                @include desktop {
+                    font-size: 1.4rem;
+                }
             }
         }  
     }
@@ -60,13 +70,16 @@
             .img__secundaria {
             width: 100%;
             height: 50%;
+            @include tablet(){
+                height: 35%;
+            }
             }
             h4 {
             margin: 0.2em 0.2em 0.2em 0.2em;
             }
         @include tablet() {
             width: 170px;
-            height: 280px;
+            height: 380px;
             overflow: hidden;
             font-weight: 700;
             font-size: 1rem;

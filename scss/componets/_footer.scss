@@ -12,7 +12,12 @@ footer {
         }
     
         .img-redes {
+            border-radius: 50%;
         width: 30px;
+        &:hover {
+            box-shadow: $box-shadow;
+            filter: invert(1) hue-rotate(45deg);
+        }
         @include tablet() {
             margin-top: 1em;
              width: 50px;
