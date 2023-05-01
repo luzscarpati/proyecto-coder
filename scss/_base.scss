@@ -35,6 +35,28 @@ $box-shadow-button: 2px 2px 70px red, -2px -2px 70px blue;
     }
 }
 
+@keyframes animacion_historia {
+
+ 0%{
+    translate: 0px 0px;
+ }
+ 25%{
+    translate: 10px 25px;
+ }
+ 50%{
+    rotate: -10deg;
+ }
+ 75%{
+    rotate: -15deg;
+ }
+ 100%{
+    rotate: -20deg;
+    translate: 10px 25px;
+ }
+
+
+}
+
 
 body {
     font-family: $font-family;
@@ -58,6 +80,10 @@ body {
     h2 {
         align-self: flex-start;
         padding-left: 0.3em;
+        @include tablet() {
+            font-size: 3rem;
+            padding: .5em;
+        }
     }
     p {
     margin: 0.5em;

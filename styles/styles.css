@@ -4,6 +4,24 @@
   box-sizing: border-box;
 }
 
+@keyframes animacion_historia {
+  0% {
+    translate: 0px 0px;
+  }
+  25% {
+    translate: 10px 25px;
+  }
+  50% {
+    rotate: -10deg;
+  }
+  75% {
+    rotate: -15deg;
+  }
+  100% {
+    rotate: -20deg;
+    translate: 10px 25px;
+  }
+}
 body {
   font-family: "Amatic SC";
   background: linear-gradient(black 0% 50%, rgb(87, 85, 85) 90% 100%);
@@ -25,6 +43,12 @@ body a:hover {
 body h2 {
   align-self: flex-start;
   padding-left: 0.3em;
+}
+@media (min-width: 576px) {
+  body h2 {
+    font-size: 3rem;
+    padding: 0.5em;
+  }
 }
 body p {
   margin: 0.5em;
@@ -254,6 +278,7 @@ footer .img-redes:hover {
 .discografia .img_discos {
   width: 200px;
   height: 200px;
+  box-shadow: 2px 2px 10px red, -2px -2px 10px blue;
 }
 
 .formulario__contacto {
@@ -306,23 +331,95 @@ footer .img-redes:hover {
 
 .historia {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-}
-.historia .subtitulos_historia {
-  margin-top: 0.3em;
-  align-self: flex-start;
-  padding-left: 0.5em;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 0.7em;
 }
 .historia .article_historia {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 2px 10px red, -2px -2px 10px blue;
+  background-color: white;
+  border-radius: 5px;
+  width: 300px;
+  height: 325px;
+  animation-name: animacion_historia;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.historia .article_historia:nth-child(2) {
+  animation-delay: 1s;
+}
+.historia .article_historia:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.historia .article_historia:nth-child(4) {
+  animation-delay: 2s;
+}
+.historia .article_historia:nth-child(5) {
+  animation-delay: 2.5s;
+}
+.historia .article_historia:nth-child(even) {
+  animation-direction: reverse;
+}
+.historia .article_historia:nth-child(3n) {
+  animation-direction: normal;
+}
+.historia .article_historia .subtitulos_historia {
+  color: black;
+  margin-top: 0.1em;
+  align-self: flex-start;
+  padding-left: 1.3em;
 }
 .historia .article_historia .img_historia {
   width: 85%;
+  box-shadow: 2px 2px 3px black;
+}
+.historia .article_historia .caja_parrafo {
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 0.3em;
+  margin-top: 0.3em;
+}
+.historia .article_historia p {
+  color: black;
+  padding-left: 1em;
+  padding-right: 1em;
+  overflow: hidden;
+}
+@media (min-width: 1080px) {
+  .historia .article_historia p:hover {
+    translate: 0 -370px;
+    transition: 40s linear;
+  }
+}
+.historia .article_historia .btn_vermas {
+  color: white;
+  background-color: rgb(176, 4, 4);
+  border-radius: 3px;
+  font-size: 1em;
+  padding: 0.09em;
+  margin-bottom: 0.2em;
+  margin-right: 0.2em;
+}
+.historia .article_historia .btn_vermas:hover {
+  box-shadow: 2px 2px 10px red, -2px -2px 10px blue;
+}
+@media (min-width: 1080px) {
+  .historia .article_historia .btn_vermas {
+    display: none;
+  }
+}
+@media (min-width: 1080px) {
+  .historia {
+    gap: 25px;
+  }
 }
 
 .img__carusel {
