@@ -77,12 +77,15 @@ body {
             text-shadow: $text-shadow;
         } 
     }
+    h1 {
+        display: inline-block;
+    }
     h2 {
         align-self: flex-start;
         padding-left: 0.3em;
         @include tablet() {
-            font-size: 3rem;
-            padding: .5em;
+            font-size: 2rem;
+            padding: .2em;
         }
     }
     h3 {

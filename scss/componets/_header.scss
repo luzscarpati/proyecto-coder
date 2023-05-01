@@ -1,14 +1,17 @@
 header {
     @include flex_row;
-    margin: 1em;
-
+    margin: .3em;
+    
         .lengua {
-        width: 20vw;
-        &:hover {
-        transform: scale(1.1);}
-       
+          height: 100px;
+          &:hover {
+            transform: scale(1.1);
+            }
+          @include tablet{
+            height: 150px;
+          }
         }
-
+        
         .nav__header {
         @include flex_column_variable(flex-start);
         padding-left: .1em;
