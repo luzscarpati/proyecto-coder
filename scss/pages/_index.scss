@@ -1,6 +1,11 @@
 .main__index {
     @include flex_column_variable(center);
 
+    .titulo_invisible {
+        visibility: hidden;
+        font-size: .01rem;
+    }
+
     .noticias__destacadas {
        @include flex_row;
        flex-wrap: wrap;
@@ -74,8 +79,12 @@
                 height: 35%;
             }
             }
-            h4 {
+            .titulo-noti-secundaria {
+            font-size: 1rem;
             margin: 0.2em 0.2em 0.2em 0.2em;
+            @include desktop {
+                font-size: 1.5rem;
+            }
             }
         @include tablet() {
             width: 170px;

@@ -85,7 +85,19 @@ body {
             padding: .5em;
         }
     }
+    h3 {
+        padding: .5em;
+    }
+    h4 {
+        align-self: flex-start;
+        padding-left: 0.3em;
+        @include tablet() {
+            font-size: 3rem;
+            padding: .5em;
+        }
+    }
+
     p {
-    margin: 0.5em;
+    margin: .5em;
     }
     }
