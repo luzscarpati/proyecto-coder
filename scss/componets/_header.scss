@@ -1,6 +1,6 @@
 header {
     @include flex_row;
-    margin: .3em;
+    margin: .5em;
     
         .lengua {
           height: 100px;
@@ -14,7 +14,6 @@ header {
         
         .nav__header {
         @include flex_column_variable(flex-start);
-        padding-left: .1em;
         font-size: 1.3rem;
         @include tablet() {
             padding-left: 0.5em;

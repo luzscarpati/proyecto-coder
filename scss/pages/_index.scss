@@ -83,7 +83,7 @@
             font-size: 1rem;
             margin: 0.2em 0.2em 0.2em 0.2em;
             @include desktop {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
             }
         @include tablet() {
@@ -91,7 +91,7 @@
             height: 380px;
             overflow: hidden;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: .85rem;
         }
         @include desktop(){
             width: 300px;
