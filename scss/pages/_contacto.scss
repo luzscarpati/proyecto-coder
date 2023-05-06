@@ -7,12 +7,26 @@
         @include flex_row;
         gap: 0.5em;
         }
+        .genero__formulario {
+            @include flex_row;
+            gap: 1em;
+        }
+
     @include tablet() {
         font-size: 2rem;
+        
+        .textarea__formulario {
+            width: 413px;
+        }
         .input_formulario {
             width: 20em;
             height: 2em;
             font-size: 1rem;
+        }
+    }
+    @include desktop {
+        .textarea__formulario {
+            width: 827px;
         }
     }
 }

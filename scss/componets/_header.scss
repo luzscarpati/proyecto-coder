@@ -39,6 +39,10 @@ header {
         }
         .h1__stones {
         font-size: 4.4rem;
+        animation-name: latido;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+
         @include tablet(){
             font-size: 6.7rem;  
         }

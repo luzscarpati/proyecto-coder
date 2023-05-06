@@ -53,10 +53,19 @@ $box-shadow-button: 2px 2px 70px red, -2px -2px 70px blue;
     rotate: -20deg;
     translate: 10px 25px;
  }
-
-
 }
 
+@keyframes latido {
+    0% {
+      font-size: 4rem;
+    }
+    50% {
+      font-size: 4.2rem;
+    }
+    100% {
+      font-size: 4rem;
+    }
+  }
 
 body {
     font-family: $font-family;

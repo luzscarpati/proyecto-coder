@@ -24,10 +24,10 @@
         }
         }
         &:nth-child(even) {
-            animation-direction: reverse; // Establece la dirección de la animación como "reverse" en las cajas pares
+            animation-direction: reverse;
           }
           &:nth-child(3n) {
-            animation-direction: normal; // Establece la dirección de la animación como "normal" en las cajas cuyo índice es múltiplo de 3
+            animation-direction: normal;
           }
         
         .subtitulos_historia {

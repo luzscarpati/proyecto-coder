@@ -22,6 +22,17 @@
     translate: 10px 25px;
   }
 }
+@keyframes latido {
+  0% {
+    font-size: 4rem;
+  }
+  50% {
+    font-size: 4.2rem;
+  }
+  100% {
+    font-size: 4rem;
+  }
+}
 body {
   font-family: "Amatic SC";
   background: linear-gradient(black 0% 50%, rgb(87, 85, 85) 90% 100%);
@@ -126,6 +137,9 @@ header h1 {
 }
 header .h1__stones {
   font-size: 4.4rem;
+  animation-name: latido;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 @media (min-width: 576px) {
   header .h1__stones {
@@ -326,14 +340,29 @@ footer .img-redes:hover {
   align-items: center;
   gap: 0.5em;
 }
+.formulario__contacto .genero__formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
 @media (min-width: 576px) {
   .formulario__contacto {
     font-size: 2rem;
+  }
+  .formulario__contacto .textarea__formulario {
+    width: 413px;
   }
   .formulario__contacto .input_formulario {
     width: 20em;
     height: 2em;
     font-size: 1rem;
+  }
+}
+@media (min-width: 1080px) {
+  .formulario__contacto .textarea__formulario {
+    width: 827px;
   }
 }
 
