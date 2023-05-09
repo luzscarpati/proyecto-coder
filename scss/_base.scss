@@ -1,4 +1,4 @@
-$background-color: linear-gradient(black 0% 50%, rgb(87, 85, 85) 90% 100%);
+$background-color: linear-gradient(black 0% 50%, rgb(33, 31, 31) 90% 100%);
 $font-family: "Amatic SC";
 $font-color: white;
 $text-shadow: 5px 5px 10px red, -7px -7px 10px blue;
@@ -69,6 +69,7 @@ $box-shadow-button: 2px 2px 70px red, -2px -2px 70px blue;
 
 body {
     font-family: $font-family;
+    font-weight: bold;
     background: $background-color;
     letter-spacing: normal;
     overflow-x: hidden;

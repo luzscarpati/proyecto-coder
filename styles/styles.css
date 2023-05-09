@@ -35,7 +35,8 @@
 }
 body {
   font-family: "Amatic SC";
-  background: linear-gradient(black 0% 50%, rgb(87, 85, 85) 90% 100%);
+  font-weight: bold;
+  background: linear-gradient(black 0% 50%, rgb(33, 31, 31) 90% 100%);
   letter-spacing: normal;
   overflow-x: hidden;
   color: white;
@@ -504,6 +505,11 @@ footer .img-redes:hover {
 
 .titulo_carusel {
   text-align: left;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 9px;
 }
 
 /*# sourceMappingURL=styles.css.map */
